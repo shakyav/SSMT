@@ -10,13 +10,6 @@ app = Flask(__name__)
 
 openshift_object = openshift_info.ServiceClass()
 
-@app.route('/health')
-def health():
-    """
-    Add python flask application heath checks 
-    """
-    return "OK"
-
 @app.route('/push_to_object_store')
 def push_to_object_store():
     """
