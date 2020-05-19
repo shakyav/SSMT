@@ -107,6 +107,7 @@ class ServiceClass(object):
     
     def get_all(self):
         pods_api = self.oapi_client.resources.get(kind='Pod', api_version='v1')
+        print(pods_api)
         pod_list = pods_api.get()
         return self._get_status_pods(pod_list)
 
