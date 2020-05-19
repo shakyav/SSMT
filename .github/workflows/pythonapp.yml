@@ -22,7 +22,7 @@ jobs:
         python-version: 3.8
     - name: Install dependencies
       run: |
-        python -m pip3 install --upgrade pip3
+        python -m pip install --upgrade pip
         pip3 install flake8 pytest
         pip3 install flask 
         pip3 install kubernetes
